@@ -7,7 +7,9 @@ source.main_py = main.py
 version = 0.1
 requirements = python3,kivy
 android.arch = arm64-v8a
-source.exclude_dirs = .git,bin,venv,__pycache__,.buildozer
+
+# Dòng mới bạn vừa thêm vào
+source.exclude_dirs = tests, test, .github
 
 [buildozer]
 log_level = 2
