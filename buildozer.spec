@@ -5,11 +5,13 @@ package.domain = org.cnc.app
 source.dir = .
 source.main_py = main.py
 version = 0.1
-requirements = python3,kivy
+
+# Yêu cầu các phiên bản tương thích từ PyPI
+requirements = python3,kivy==2.2.1,jnius==1.6.0,cython==3.0.10
+
 android.arch = arm64-v8a
 
-# Dòng mới bạn vừa thêm vào/thay thế
-source.exclude_patterns = tests/*, test/*, .github/*
+# Xóa các dòng source.exclude_dirs và source.exclude_patterns nếu có
 
 [buildozer]
 log_level = 2
