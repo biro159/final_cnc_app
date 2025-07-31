@@ -15,8 +15,7 @@ jobs:
 
       - name: Build with Buildozer
         uses: ArtemSBulgakov/buildozer-action@v1
-        with:
-          build_mode: debug
+
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
