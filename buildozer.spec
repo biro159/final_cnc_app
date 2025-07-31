@@ -8,8 +8,8 @@ version = 0.1
 requirements = python3,kivy
 android.arch = arm64-v8a
 
-# Dòng mới bạn vừa thêm vào
-source.exclude_dirs = tests, test, .github
+# Dòng mới bạn vừa thêm vào/thay thế
+source.exclude_patterns = tests/*, test/*, .github/*
 
 [buildozer]
 log_level = 2
