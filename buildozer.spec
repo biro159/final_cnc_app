@@ -19,5 +19,5 @@ source.exclude_patterns = tests/*, test/*, .github/*, venv/
 log_level = 2
 warn_on_root = 0
 
-# Ép Buildozer dùng phiên bản python-for-android mới nhất
-p4a.branch = master
+# Chỉ định phiên bản NDK ổn định
+android.ndk_version = 25c
