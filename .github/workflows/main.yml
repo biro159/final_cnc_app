@@ -1,0 +1,25 @@
+name: Buildozer Android CI
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build with Buildozer
+        uses: kivy/buildozer-action@v1
+        with:
+          build_mode: debug
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: package
+          path: bin/*.apk
