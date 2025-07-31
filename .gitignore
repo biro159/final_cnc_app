@@ -1,0 +1,13 @@
+# Môi trường ảo
+venv/
+.venv/
+
+# Build artifacts
+bin/
+build/
+dist/
+.buildozer/
+
+# Python cache
+__pycache__/
+*.pyc
